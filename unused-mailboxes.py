@@ -1,3 +1,13 @@
+#This script is meant to be used with .csv file output from the
+#Office 365 User Activity report generated from the 365 admin reports dashboard.
+#It spits out 4 .csv files, which may seem like much, but I wanted to sort users by
+#Activity (in Exchange specifically), Inactivity, Non-Licensed, and All.  
+# Just run this script in the same directory as the report, and change the 
+# #file variable so that it matches your file name
+
+#Make sure to clean up the data from the report so UPN, Dipslay Name, Has Exchange,
+#and Exchange Activity Date are the first four columns of the .csv in that order.  
+
 import csv
 
 #Opening Data source and creating output files
